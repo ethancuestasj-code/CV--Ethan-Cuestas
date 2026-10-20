@@ -1,0 +1,205 @@
+
+
+:root {
+  --navy: #1e2a3a;
+  --teal: #0e7c86;
+  --light: #d9eef0;
+}
+
+/* General */
+html {
+  background-color: #cfd6dc;
+}
+
+body {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2933;
+  background-color: white;
+  width: 210mm;
+  max-width: 100%;
+  min-height: 297mm;
+  margin: 20px auto;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+  margin: 0;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 12mm;
+}
+
+/* Header */
+header {
+  background-color: var(--navy);
+  color: white;
+  padding: 20px 0;
+}
+
+header a {
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--teal);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  flex-grow: 1;
+}
+
+.role {
+  color: var(--light);
+  margin: 4px 0 0 0;
+}
+
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 3px solid var(--teal);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 12mm;
+}
+
+nav a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--navy);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--light);
+}
+
+/* Sections */
+section {
+  margin-top: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--navy);
+  border-bottom: 2px solid var(--teal);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* Experience and education */
+.entry {
+  border-left: 3px solid var(--teal);
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
+.place {
+  font-weight: bold;
+  margin: 0;
+}
+
+.dates {
+  font-style: italic;
+  margin: 0 0 6px 0;
+}
+
+.entry ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Skills */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags li {
+  background-color: var(--teal);
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+/* Languages table */
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 6px 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #eaeef1;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
